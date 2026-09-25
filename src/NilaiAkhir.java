@@ -22,5 +22,22 @@ public class NilaiAkhir {
 
         System.out.print("Nilai final     :");
         double NilaiFinal = scanner.nextDouble();
+
+        /*
+         * Percobaan menggunakan int:
+         * praktikum * 30 / 100 + tugas * 20 / 100
+         * + mid * 20 / 100 + finalNilai * 30 / 100
+         *
+         * Hasilnya menjadi 78, bukan 79.1, karena pembagian integer
+         * tidak mengeluarkan bentuk pecahan.
+         */
+
+        /*
+         * Menggunakan operator Precedence tidak membutuhkan kurung karena operator * dikerjakan
+         * lebih dahulu daripada operator +.
+         */
+
+
     }
+
 }
