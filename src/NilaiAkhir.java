@@ -45,15 +45,29 @@ double akhir = praktikum * BOBOT_PRAKTIKUM
 //Augmented assignment untuk nilai final
         akhir += NilaiFinal * BOBOT_FINAL;
 
-//Casting double ke int agat membuang nagian pecahan
+//Casting double ke int agar membuang bagian pecahan
 int dibulatkan = (int) akhir;
+
+//Menghitung selisih
+double selisih = (int) akhir;
 
 //Status Kelulusan
 boolean lulus = akhir >= 60;
 
+//Menampilkan hasil
+System.out.println();
+System.out.println("========== NILAI AKHIR ===========");
+System.out.println("Praktikum :" + praktikum + "(30%)");
+System.out.println("Tugas     :" + NilaiTugas + "(20%)");
+System.out.println("MID       :" + NilaiMID + "(20%)");
+System.out.println("Final     :" + NilaiFinal + "(30%)");
+System.out.println();
+System.out.println("Nilai akhir :" + akhir);
+System.out.println("Dibulatkan  :" + dibulatkan);
+System.out.println("Selisih     :" + selisih);
+System.out.println("Lulus (>=60 :" + lulus );
 
-
-
+scanner.close();
     }
 
 }
