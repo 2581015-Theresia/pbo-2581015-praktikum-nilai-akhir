@@ -42,6 +42,15 @@ double akhir = praktikum * BOBOT_PRAKTIKUM
         + NilaiMID * BOBOT_MID
         + NilaiFinal * BOBOT_FINAL;
 
+//Augmented assignment untuk nilai final
+        akhir += NilaiFinal * BOBOT_FINAL;
+
+//Casting double ke int agat membuang nagian pecahan
+int dibulatkan = (int) akhir;
+
+//Status Kelulusan
+boolean lulus = akhir >= 60;
+
 
 
 
