@@ -37,6 +37,13 @@ public class NilaiAkhir {
          * lebih dahulu daripada operator +.
          */
 
+double akhir = praktikum * BOBOT_PRAKTIKUM
+        + NilaiTugas * BOBOT_TUGAS
+        + NilaiMID * BOBOT_MID
+        + NilaiFinal * BOBOT_FINAL;
+
+
+
 
     }
 
