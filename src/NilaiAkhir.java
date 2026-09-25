@@ -1,14 +1,17 @@
 import java.util.Scanner;
+import java.util.Locale;
 
 public class NilaiAkhir {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
+
 // Konstanta bobot penilaian
-        final double BOBOT_PRAKTIKUM = 0.3;
-        final double BOBOT_TUGAS = 0.2;
-        final double BOBOT_MID = 0.2;
-        final double BOBOT_FINAL = 0.3;
+        final double BOBOT_PRAKTIKUM = 0.30;
+        final double BOBOT_TUGAS = 0.20;
+        final double BOBOT_MID = 0.20;
+        final double BOBOT_FINAL = 0.30;
 
 // Input Nilai
         System.out.print("Nilai praktikum :");
@@ -39,8 +42,7 @@ public class NilaiAkhir {
 
 double akhir = praktikum * BOBOT_PRAKTIKUM
         + NilaiTugas * BOBOT_TUGAS
-        + NilaiMID * BOBOT_MID
-        + NilaiFinal * BOBOT_FINAL;
+        + NilaiMID * BOBOT_MID;
 
 //Augmented assignment untuk nilai final
         akhir += NilaiFinal * BOBOT_FINAL;
